@@ -10,7 +10,7 @@ In vista prodotto, un blocco statico specifico deve essere visualizzato per tutt
 
 * Segnare gli ID delle categorie interessate (ad es. 15, 26, 40)
 * creare un blocco statico per ogni ID categoria, l'*identificatore* **deve** iniziare così `category{ID}-il_mio_blocco_statico`. Ad es. `category40-il_mio_blocco_statico`
-* aggiungere nel file `catalog/product/view.phtml`, posizionandolo dove i vuol far visualizzare il blocco, la seguente stringa `echo $this->getChildHtml('dynamic_block_product_category');`
+* aggiungere nel file `catalog/product/view.phtml`, posizionando dove si vuol far visualizzare il blocco, la seguente stringa `echo $this->getChildHtml('dynamic_block_product_category');`
 
 ##Installazione
 
