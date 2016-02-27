@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Vmasciotta_DynamicBlockProductCategory>
+            <version>1.0.0</version>
+        </Vmasciotta_DynamicBlockProductCategory>
+    </modules>
+    <global>
+        <blocks>
+            <vmasciotta_dynamicblockproductcategory>
+                <class>Vmasciotta_DynamicBlockProductCategory_Block</class>
+            </vmasciotta_dynamicblockproductcategory>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <vmasciotta_dynamicblockproductcategory>
+                    <file>vmasciotta/dynamicblockproductcategory.xml</file>
+                </vmasciotta_dynamicblockproductcategory>
+            </updates>
+        </layout>
+    </frontend>
+</config>
