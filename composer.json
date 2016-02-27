@@ -2,7 +2,7 @@
   "name": "vmasciotta/magento-dynamicblockproductcategory",
   "type": "magento-module",
   "license": "MIT",
-  "homepage": "http://github.com/vmasciotta/MagentoDynamicBlockProductCategory",
+  "homepage": "https://github.com/vmasciotta/magento-dynamicblockproductcategory",
   "description": "Modulo per la visaulizzazione dinamica dei blocchi statici in scheda prodotto relativi alla categoria di appartenenza",
   "authors": [
     {
