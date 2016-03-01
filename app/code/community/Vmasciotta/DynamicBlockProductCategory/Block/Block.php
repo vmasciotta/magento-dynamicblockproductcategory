@@ -43,11 +43,14 @@ class Vmasciotta_DynamicBlockProductCategory_Block_Block extends Mage_Core_Block
     protected function _prepareData()
     {
         $product = Mage::registry('product');
-        $conditions = $this->_getConditions($product);
-        $blockCollection = $this->_getCollection($conditions);
-        if ($blockCollection->count() !== 0) {
-            $identifier = $blockCollection->getFirstItem()->getIdentifier();
-            return $this->getLayout()->createBlock('cms/block')->setBlockId($identifier)->toHtml();
+
+        if (count($product->getCategoryIds())) {
+            $conditions = $this->_getConditions($product);
+            $blockCollection = $this->_getCollection($conditions);
+            if ($blockCollection->count() !== 0) {
+                $identifier = $blockCollection->getFirstItem()->getIdentifier();
+                return $this->getLayout()->createBlock('cms/block')->setBlockId($identifier)->toHtml();
+            }
         }
         return '';
 
